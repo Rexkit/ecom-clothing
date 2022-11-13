@@ -1,5 +1,5 @@
 import React from 'react';
-import CategoryItem from '../category-item/category-item.component';
+import HomeItem from '../home-item/home-item.component';
 import './categories-list.styles.scss';
 
 const CategoriesList = ({ categories }) => {
@@ -7,7 +7,7 @@ const CategoriesList = ({ categories }) => {
     <div className="categories-container">
       {categories.map(category => {
         return (
-          <CategoryItem key={category.id} category={category} />
+          <HomeItem key={category.id} category={category} />
         )
       })}
     </div>
